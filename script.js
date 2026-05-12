@@ -1,7 +1,8 @@
 const list = document.getElementById("infi-list");
 
+let count =0;
 function addItems(nums){
-	let count =0;
+	
 
 	for(let i=0;i<nums;i++){
 		count++;
@@ -13,7 +14,7 @@ function addItems(nums){
 	}
 }
 
-addItems(nums);
+addItems(10);
 
 list.addEventListener('scroll', () =>{
 	if(list.scrollTop + list.clientHeight >= list.scrollHeight){
